@@ -2,14 +2,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
  
-class Login extends JFrame implements ActionListener
+class LoginForm extends JFrame implements ActionListener
 {
  JButton SUBMIT;
  JPanel panel;
  JLabel label1,label2;
  final JTextField  txtUser,txtPass;
-  Login()
-  {
+ LoginForm(){
   label1 = new JLabel();
   label1.setText("Username:");
   txtUser = new JTextField(15);
@@ -47,13 +46,13 @@ class Login extends JFrame implements ActionListener
   }
 }
 }
- class LoginDemo
+ class Login
 {
   public static void main(String arg[])
   {
   try
   {
-  Login frame=new Login();
+  LoginFrame frame=new LoginFrame();
   frame.setSize(300,100);
   frame.setVisible(true);
   }
